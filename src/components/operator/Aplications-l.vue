@@ -91,7 +91,7 @@
   </div>
 </div>
 </div>
-<div class="space"></div>
+<!-- <div class="space"></div> -->
 
   </template>
   
@@ -120,7 +120,6 @@
     text-align: center;
     align-items: center;
     color: #FFFFFF;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     display: flex;
     padding-top: 5px;
@@ -149,7 +148,6 @@
 
   .text-box {
     font-size: 24px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #FFFFFF;
     font-weight: bold;
     align-self: center;

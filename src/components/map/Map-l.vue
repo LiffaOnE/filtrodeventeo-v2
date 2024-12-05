@@ -34,7 +34,6 @@
         padding-top: 1.3vw;
         color: #10395F;
         font-size: 20px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
     span{

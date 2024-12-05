@@ -1,5 +1,5 @@
 <template>
-    <div class="homePage">
+    <div class="homePage" id="home">
         <BackgroundNav/>
         <ButtonNav/>
         <Carousel/>

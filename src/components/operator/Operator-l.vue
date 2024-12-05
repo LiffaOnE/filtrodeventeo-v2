@@ -1,10 +1,10 @@
 <template>
-  <div class="space"></div>
+  <!-- <div class="space"></div> -->
     <div class="general-background">
       <div class="text-image-container">
       <div class="high-text">
         <img class="img-azul" src="../../assets/iso_azul.svg" alt="">
-        <h1>FUNCIONAMIENTO</h1>
+        <h1 id="operator">FUNCIONAMIENTO</h1>
       </div>
       <div class="text-center">
           <p>
@@ -74,7 +74,6 @@
     justify-content: start;
     text-align: left;
     color: #10395F;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     
   }
@@ -87,7 +86,6 @@
   }
 
   .text-center {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 300;
     color: #10395F;
     font-size: 20px;
@@ -99,7 +97,6 @@
   }
 
   .text-under {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
     color: #10395F;
     font-size: 20px;

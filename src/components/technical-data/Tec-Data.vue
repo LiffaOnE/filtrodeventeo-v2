@@ -3,7 +3,7 @@
         <div style="display: block;">
             <div class="high-text">
         <img class="img-azul" src="../../assets/iso_azul.svg" alt="">
-        <h1>DATOS TÉCNICOS</h1>
+        <h1 id="technical-data">DATOS TÉCNICOS</h1>
     </div> 
         <div class="subtitle-blue">
         <p class="part">PARTES</p>
@@ -48,7 +48,6 @@
     justify-content: start;
     text-align: left;
     color: #10395F;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     
   }
@@ -74,7 +73,6 @@
     height: 56px;
     background-color: #10395F;
     font-size: 24px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #FFFFFF;
     font-weight: bold;
     align-self: center;
@@ -95,8 +93,7 @@
 
   .text-p {
     font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: lighter;
+    font-weight: 250;
     color: #10395F;
   }
 
@@ -120,6 +117,7 @@
   }
   .subtitle-blue {
     margin-top: 80vw;
+    width: 100%;
   }
   .box-container {
     width: 100%;

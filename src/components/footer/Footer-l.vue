@@ -30,51 +30,77 @@
 .container {
   display: flex;
   justify-content: space-around;
-  width: 1440px;
+  flex-wrap: wrap; 
+  width: 1440px; 
+  padding: 20px 0; 
 }
 
 footer {
-  width: 1440px;
-  font-size: 21px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 1440px; 
+  font-size: 18px; 
   color: #FFFFFF;
   text-align: center;
-  height: 30px;
+  height: 30px; 
+  padding: 0px 0px 10px; 
+  line-height: 1px; 
+  overflow: hidden;
   background-color: #10395F;
 }
 
 .svg-d {
-        display: flex;
-        margin-top: 1.8vw;
-        padding-right: 1vw;
-    }
-
-.direction {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 100;
-  color: #10395F;
-  font-size: 25px;
-  display: flex ;
+  margin-top: 20px; /* Ajusta los márgenes */
+  padding-right: 10px;
 }
 
-  .high-text {
-    justify-content: start;
-    text-align: left;
-    color: #10395F;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    margin-top: 2vw;
-    
-  }
+.direction {
+  font-weight: 100;
+  color: #10395F;
+  font-size: 18px;
+  display: flex;
+  align-items: center; 
+  margin-bottom: 10px; 
+  text-align: left; 
+}
 
-  .text-ber {
-    justify-content: start;
-    text-align: left;
-    color: #10395F;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    margin-top: 2vw;
+.high-text {
+  justify-content: start;
+  text-align: left;
+  color: #10395F;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.text-ber {
+  justify-content: start;
+  text-align: left;
+  color: #10395F;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; 
+    align-items: center; 
   }
+  .text-ber {
+    margin-left: 0; 
+    text-align: center; 
+  }
+  p span {
+    font-size: 18px;
+  }
+  .direction {
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+  }
+  footer {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
   
   @media (max-width: 480px) {
     .container {
@@ -94,7 +120,7 @@ footer {
     }
     footer {
       width: 100%;
-      height: 62px;
+      /* height: 62px; */
       display: grid;
       font-size: 16px;
       text-align: center;

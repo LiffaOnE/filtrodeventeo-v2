@@ -2,7 +2,7 @@
     <div class="mobile-container">
         <div class="high-text">
         <img class="img-azul" src="../../assets/iso_azul.svg" alt="">
-        <h1>CONTACTO</h1>
+        <h1 id="contacto">CONTACTO</h1>
         </div>
         <form action="https://formsubmit.co/cb00a9d24ad49630a2aace682a6d91d9" method="POST">
           <div class="cubik">
@@ -46,7 +46,6 @@
   color: #10395F;
   cursor: pointer;
   font-size: 30px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-decoration: none;
   font-weight: initial;
   letter-spacing: -1px;
@@ -92,7 +91,6 @@
   display: block;
   font-size: 20px;
   font-weight: light;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #999898;
   opacity: 0.5;
 }
@@ -103,7 +101,6 @@
   /* justify-content: space-around; */
   margin: 1vw;
   font-size: 24px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .cubik {
@@ -112,14 +109,13 @@
   justify-content: space-around;
   margin: 1vw;
   font-size: 24px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .high-text {
     justify-content: start;
     text-align: left;
     color: #10395F;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
     font-weight: bold;
     margin-top: 2vw;
     margin-left: 5vw;
@@ -143,6 +139,7 @@
     }
     form, .cubik, .cubik-v2{
       display: block;
+      width: 99%;
     }
     .input-barra {
       width: 88vw;

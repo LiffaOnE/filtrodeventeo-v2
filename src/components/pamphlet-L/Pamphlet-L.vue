@@ -16,7 +16,6 @@
   height: 188px;
   background-color: #10395F;
   color: #FFFFFF;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 30px;
   font-weight: bold;
   margin-top: 2vw;

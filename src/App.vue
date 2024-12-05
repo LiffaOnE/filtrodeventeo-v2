@@ -1,7 +1,4 @@
 <template>
-  <div class="container">
-    <RouterView/>
-  </div>
   <HomePage/>
   <OperatorL/>
   <TecData/>
@@ -10,7 +7,7 @@
   <ContactL/>
   <MapL/>
   <FooterL/>
-  
+
 </template>
 
 <script lang="ts" setup>
@@ -23,10 +20,14 @@ import PamphletL from './components/pamphlet-L/Pamphlet-L.vue';
 import ContactL from './components/Contact/Contact-L.vue';
 import MapL from './components/map/Map-l.vue';
 import FooterL from './components/footer/Footer-l.vue';
-import { RouterView } from 'vue-router';
 
 </script>
 
 <style scoped>
+html, body {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
 </style>

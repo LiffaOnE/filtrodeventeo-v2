@@ -1,21 +1,19 @@
 <template>
     <div class="buttons-nav">
+        <button class="button-color"></button>
         <button class="button-color">
-            <!-- <router-link to="/home">Ir a HomePage</router-link>
-            <router-link to="/operator">Ir a Operator</router-link>
-<router-link to="/technical-data">Ir a TecData</router-link> -->
-            <!-- <RouterLink to="./HomePage.vue">HOME</RouterLink> -->
-        </button>
-        <!-- <button class="button-color">
-            <RouterLink to="./../operator/Operator-l.vue">FUNCIONAMIENTO</RouterLink>
-        </button> -->
-        <button class="button-color">
-            <!-- DATOS TÉCNICOS -->
-            <RouterLink to="./../technical-data/Tec-Data.vue">datos</RouterLink>
+            <Router-link to="/#home">HOME</Router-link>
         </button>
         <button class="button-color">
-            CONTACTO
+            <RouterLink to="/#operator">FUNCIONAMIENTO</RouterLink>
         </button>
+        <button class="button-color">
+            <RouterLink to="/#technical-data">DATOS TÉCNICOS</RouterLink>
+        </button>
+        <button class="button-color">
+            <RouterLink to="/#contacto">CONTACTO</RouterLink>
+        </button>
+        <button class="button-color"></button>
     </div>
 </template>
 
@@ -26,11 +24,21 @@
 <style scoped>
 
 .button-color {
-    color: #10395F;
+    color: #989797;
     text-decoration: none;
     border: 0;
     background-color: transparent;
+    font-size: 15px;
 }
+
+a {
+    all: unset;
+}
+
+.button-color:hover {
+    color: #10395F;
+}
+
 
 .buttons-nav {
     width: 1440px;
@@ -44,6 +52,13 @@
 @media (max-width: 480px) {
   .buttons-nav {
     display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none; /* El menú móvil no se necesita en pantallas grandes */
   }
 }
 

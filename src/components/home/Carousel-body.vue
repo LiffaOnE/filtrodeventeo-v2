@@ -49,7 +49,6 @@ const [emblaRef] = emblaCarouselVue({ loop: true }, [Autoplay()])
     align-content: center;
     font-size: 24px;
     font-weight: 300;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     color: #FFFFFF;
 }

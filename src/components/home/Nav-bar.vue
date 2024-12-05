@@ -7,10 +7,13 @@
             <img class="languages" src="../../assets/ingles.jpg" alt="">
             <img class="languages" src="../../assets/portugues.jpg" alt="">
         </div>
+        <MobileMenu/>
     </div>
 </template>
 
 <script lang="ts" setup>
+
+import MobileMenu from './MobileMenu.vue';
 
 </script>
 
@@ -33,7 +36,7 @@
     display: flex;
     width: 1440px;
     background-color: #10395F;
-    height: 5vw;
+    height: 130px;
 }
 
 .languages {
@@ -53,7 +56,7 @@
     width: 100%;
     background-color: #0F395F;
     display: flex;
-    justify-content: center; /* Centra los elementos dentro de la navbar */
+    justify-content: space-evenly; /* Centra los elementos dentro de la navbar */
     align-items: center; /* Centra el logo verticalmente */
     height: auto; /* Ajusta la altura automáticamente */
   }
@@ -63,8 +66,8 @@
     background-color: #0F395F;
     width: 230px;
     display: block; /* Asegúrate de que el logo se muestre correctamente */
-    margin-left: -30vw; /* Ajuste de margen si es necesario */
-    margin-right: 0;
+    margin-right: 22vw;
+    margin-left: 0.5vw;
   }
 
   .large-header, 
