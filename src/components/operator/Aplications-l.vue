@@ -16,7 +16,7 @@
       </div>
     </div>
 
-    <div class="box-container">
+    <div class="box-container-two">
       <div class="box-one">
         <img class="box-one" src="../../assets/ind/cemento.jpg" alt="">
       </div>
@@ -29,7 +29,7 @@
   <div class="general-container">
 
     
-<div class="box-container">
+<div class="box-container-two">
   <div class="box-a" style="background-color: #7C91B1;">
       <p class="text-box">Siderurgia</p>
   </div>
@@ -60,7 +60,7 @@
   </div>
 </div>
 
-<div class="box-container">
+<div class="box-container-two">
   <div class="box-one">
     <img class="box-one" src="../../assets/ind/madera.jpg" alt="">
   </div>
@@ -73,7 +73,7 @@
 <div class="general-container">
 
     
-<div class="box-container">
+<div class="box-container-two">
   <div class="box-a" style="background-color: #3399FF;">
       <p class="text-box">Puertos</p>
   </div>
@@ -145,6 +145,10 @@
     width: 604px;
     display: flex;
   }
+  .box-container-two {
+    width: 604px;
+    display: flex;
+  }
 
   .text-box {
     font-size: 24px;
@@ -182,9 +186,24 @@
     width: 100%;
     display: flex;
   }
+  .box-container-two {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
   .box-one {
     width: 145px;
   }
+}
+
+@media (max-width:1920px) {
+  .navbar-top {
+    width: 100%;
+  }
+  .general-container {
+    width: 100%;
+  }
+  
 }
 
   </style>

@@ -62,4 +62,10 @@ a {
   }
 }
 
+@media (max-width: 1920px) {
+    .buttons-nav {
+        width: 100%;
+    }
+}
+
 </style>

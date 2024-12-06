@@ -52,6 +52,7 @@
     width: 1440px;
     display: flex;
     justify-content: space-around;
+    margin-top: 4vw;
   }
 
   .image-background-right {
@@ -156,6 +157,13 @@
     width: 100%; /* Ajusta la imagen al ancho de la pantalla */
     height: auto; /* Mantén proporción de la imagen */
   }
+}
+
+@media (max-width:1920px) {
+  .general-background {
+    width: 100%;
+  }
+  
 }
 
   </style>

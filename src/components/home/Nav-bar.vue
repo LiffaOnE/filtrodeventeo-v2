@@ -1,6 +1,6 @@
 <template>
     <div class="backgroundNav">
-        <img class="image-logo" src="../../assets/logofiltro.png" alt="">
+        <img class="image-logo" src="../../assets/logofiltro+bertot.svg" alt="">
         <img class="large-header" src="../../assets/fdo_header.jpg" alt="">
         <div class="languages-l">
             <img class="languages" src="../../assets/castellano.jpg" alt="">
@@ -20,10 +20,9 @@ import MobileMenu from './MobileMenu.vue';
 <style scoped>
 
 .image-logo {
-    width: 18%;
-    height: 90px;
-    align-self: center;
-    margin-left: 10%;
+  width: 30%;
+  height: auto;
+  align-self: center;
 }
 
 .large-header {
@@ -58,16 +57,22 @@ import MobileMenu from './MobileMenu.vue';
     display: flex;
     justify-content: space-evenly; /* Centra los elementos dentro de la navbar */
     align-items: center; /* Centra el logo verticalmente */
-    height: auto; /* Ajusta la altura automáticamente */
+    height: 90px; /* Ajusta la altura automáticamente */
+  }
+  .languages-l .languages {
+    width: 100%;
+    height: auto;
   }
 
   /* Mostrar solo el logo y ocultar los demás elementos */
   .image-logo {
-    background-color: #0F395F;
-    width: 230px;
-    display: block; /* Asegúrate de que el logo se muestre correctamente */
-    margin-right: 22vw;
-    margin-left: 0.5vw;
+    width: 330px;
+    display: block; 
+    margin-left: -15vw;
+    background: transparent;
+  }
+  .image-logo img {
+    width: 350px;
   }
 
   .large-header, 
@@ -76,35 +81,10 @@ import MobileMenu from './MobileMenu.vue';
   }
 }
 
-/* Para móviles grandes o tablets en modo vertical */
-@media (max-width: 768px) {
-  body {
-    font-size: 15px;
-    background-color: lightgreen;
-  }
-}
-
-/* Para tablets en modo horizontal o pantallas más grandes */
-@media (max-width: 1024px) {
-  body {
-    font-size: 16px;
-    background-color: lightyellow;
-  }
-}
-
-/* Para pantallas de escritorio estándar */
-@media (min-width: 1281px) {
-  body {
-    font-size: 18px;
-    background-color: lightseagreen;
-  }
-}
-
 /* Para pantallas grandes de escritorio (monitores UHD) */
 @media (min-width: 1920px) {
-  body {
-    font-size: 20px;
-    background-color: lightgoldenrodyellow;
+  .backgroundNav {
+    width: 100%;
   }
 }
 

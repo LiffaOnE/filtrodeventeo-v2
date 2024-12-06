@@ -1,46 +1,111 @@
 <template>
     <div class="carousel-images">
-        <div class="embla" ref="emblaRef">
+        <div class="embla" ref="emblaRef1">
             <div class="embla__container">
                 <div class="embla__slide"><img class="background-card" src="../../assets/carousel/img01.png" alt=""></div>
                 <div class="embla__slide"><img class="background-card" src="../../assets/carousel/img02.png" alt=""></div>
                 <div class="embla__slide"><img class="background-card" src="../../assets/carousel/img03.png" alt=""></div>
             </div>
         </div>
-        <div class="background-card-two">
-            <span style="text-align: center; align-content: center;"> Prolonga la vida útil<br/>de los lubricantes. </span>
+
+        <div class="embla" ref="emblaRef2">
+            <div class="embla__container">
+                <div class="embla__slide">
+                    <div class="background-card-two">
+                    <span style="text-align: center; align-content: center;"> Prolonga la vida útil<br/>de los lubricantes. </span>
+                    </div>
+                </div>
+                <div class="embla__slide">
+                    <div class="background-card-two">
+                    <span style="text-align: center; align-content: center;"> Disminuye el desgaste y <br/>costos de mantención. </span>
+                    </div>
+                </div>
+                <div class="embla__slide">
+                    <div class="background-card-two">
+                    <span style="text-align: center; align-content: center;"> Eliminación de contaminación por agua <br/>en lubricantes y otros fluidos. </span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <Carouse-Two/>
+
+        <div class="embla" ref="emblaRef3">
+            <div class="embla__container">
+                <div class="embla__slide"><img class="background-card" src="../../assets/carousel/iso_slide01.svg" alt=""></div>
+                <div class="embla__slide"><img class="background-card" src="../../assets/carousel/iso_slide02.svg" alt=""></div>
+                <div class="embla__slide"><img class="background-card" src="../../assets/carousel/iso_slide03.svg" alt=""></div>
+            </div>
+        </div>
+        <!-- <Carouse-Two/> -->
     </div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
+import { ref, onMounted } from "vue";
+import EmblaCarousel from "embla-carousel";
+import Autoplay from "embla-carousel-autoplay";
+// import CarouseTwo from "./Carouse-two.vue";
 
-import emblaCarouselVue from 'embla-carousel-vue'
-import Autoplay from 'embla-carousel-autoplay'
-import CarouseTwo from './Carouse-two.vue';
+const emblaRef1 = ref(null);
+const emblaRef2 = ref(null);
+const emblaRef3 = ref(null);  // Nueva referencia para el tercer carrusel
+let embla1, embla2, embla3;    // Nueva instancia para el tercer carrusel
+
+onMounted(() => {
+  // Verificar si la referencia de emblaRef1 existe y luego inicializar embla1
+  if (emblaRef1.value) {
+    embla1 = EmblaCarousel(emblaRef1.value, { loop: true }, [
+      Autoplay({ delay: 8000, stopOnInteraction: false }),
+    ]);
+    embla1.on("select", () => setSlideVisibility(embla1));
+    setSlideVisibility(embla1); // Establecer el estado inicial
+  }
+
+  // Verificar si la referencia de emblaRef2 existe y luego inicializar embla2
+  if (emblaRef2.value) {
+    embla2 = EmblaCarousel(emblaRef2.value, { loop: true }, [
+      Autoplay({ delay: 8000, stopOnInteraction: false }),
+    ]);
+    embla2.on("select", () => setSlideVisibility(embla2));
+    setSlideVisibility(embla2); // Establecer el estado inicial
+  }
+  if (emblaRef3.value) {
+    embla3 = EmblaCarousel(emblaRef3.value, { loop: true }, [
+      Autoplay({ delay: 5000, stopOnInteraction: false }),
+    ]);
+    embla3.on("select", () => setSlideVisibility(embla3));
+    setSlideVisibility(embla3);
+  }
+});
 
 
-const [emblaRef] = emblaCarouselVue({ loop: true }, [Autoplay()])
+function setSlideVisibility(emblaInstance) {
+  const slides = emblaInstance.slideNodes();
+  const selectedIndex = emblaInstance.selectedScrollSnap();
+
+  slides.forEach((slide, index) => {
+    if (index === selectedIndex) {
+      slide.classList.add("is-visible");
+    } else {
+      slide.classList.remove("is-visible");
+    }
+  });
+}
+
 
 </script>
 
+
+
 <style scoped>
 
-.carousel-images {
-    /* background-color: black; */
-    display: flex;
-    gap: 21px;
-    overflow: hidden; /* Oculta las slides fuera del viewport */
-}
 
-.background-card {
+/* .background-card {
     justify-content: center;
     text-align: center;
     width: 466px;
     height: 466px;
     background-color: #D9D9D9;
-}
+} */
 
 .background-card-two {
     width: 466px;
@@ -53,24 +118,80 @@ const [emblaRef] = emblaCarouselVue({ loop: true }, [Autoplay()])
     color: #FFFFFF;
 }
 
+.carousel-images {
+  display: flex;
+  gap: 21px;
+  overflow: hidden; /* Oculta las slides fuera del viewport */
+}
+
+.background-card {
+  justify-content: center;
+  text-align: center;
+  width: 466px;
+  height: 466px;
+  background-color: #d9d9d9;
+}
+
 .embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  width: 466px;
+  height: 466px;
+}
+
+.embla__slide {
+  width: 100%; /* Ajustar al contenedor */
+  height: 100%; /* Ajustar al contenedor */
+  opacity: 0; /* Ocultar slides por defecto */
+  transition: opacity 3s ease; /* Suavizar la transición */
+  pointer-events: none; /* Evitar clics en slides ocultos */
+}
+
+.embla__slide.is-visible {
+  opacity: 1; /* Mostrar el slide activo */
+  pointer-events: auto; /* Permitir interacción */
+}
+
+@media (max-width:1920px) {
+  .carousel-images {
+    width: 100%;
+    /* gap: 14%; */
     overflow: hidden;
+    display: flex;
+  }
+
+.embla {
+  width: 720px;
+  height: 500px;
 }
 
-.embla__container {    
-    display: flex;  
-    width: 466px;
+.embla__container {
+  display: flex;
+  width: 615px;;
+  height: 500px;
+}
+.embla__slide.is-visible  {
+    width: 720px;
+    height: 500px;
+}
+.background-card{
+  width: 720px;
+  height: 500px;
+}
+.background-card-two {
+  width: 720px;
+  height: 500px;
 }
 
-.embla__slide {    
-    flex: 0 0 100%;    
-    min-width: 0;  
 }
 
 @media (max-width: 480px) {
     .carousel-images {
         display: block; /* Cambia el contenedor del carrusel a bloque para apilar las imágenes */
-        width: 100%; /* Asegura que el carrusel ocupe todo el ancho disponible */
+        width: 90%; /* Asegura que el carrusel ocupe todo el ancho disponible */
     }
 
     .background-card-two {
@@ -84,16 +205,25 @@ const [emblaRef] = emblaCarouselVue({ loop: true }, [Autoplay()])
     .embla {
     overflow: hidden;
     width: 100%;
+    height: auto;
+    width: auto;
     }
 
     .embla__container {
         display: flex;
         margin-top: 4vw;
+        height: auto;
+        width: auto;
     }
 
     .embla__slide {
-        width: 10px; /* Asegura que cada slide ocupe el 100% del contenedor */
-        height: 260px; /* Permite que la altura se ajuste automáticamente */
+      height: 260px;
+      width: auto;
+    }
+
+    .embla__slide.is-visible {
+      height: 260px;
+      width: auto;
     }
 
     .background-card {

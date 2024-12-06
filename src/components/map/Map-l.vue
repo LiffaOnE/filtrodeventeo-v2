@@ -51,6 +51,14 @@
         margin-top: 1.2vw;
         padding-left: 2px;
     }
+    @media (max-width:1920px) {
+        iframe {
+            width: 100%;
+        }
+        .coord {
+            width: 100%;
+        }
+    }
 
     @media (max-width: 480px) {
         iframe {
@@ -74,5 +82,6 @@
             color: #FFFFFF;
         }
     }
+
 
   </style>

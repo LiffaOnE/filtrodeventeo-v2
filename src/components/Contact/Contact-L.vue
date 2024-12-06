@@ -115,11 +115,10 @@
     justify-content: start;
     text-align: left;
     color: #10395F;
-
     font-weight: bold;
     margin-top: 2vw;
     margin-left: 5vw;
-    
+    width: 1440px;
   }
 
   .img-azul {
@@ -129,6 +128,27 @@
     margin-left: -14px;
   }
 
+  @media (max-width:1920px) {
+    .mobile-container {
+      width: 100%;
+    }
+    .cubik {
+      width: 99%;
+    }
+    .cubik-v2 {
+      width: 92%;
+      margin-left: 7vw;
+    }
+    .label-c {
+      width: 80%;
+    }
+    .input-barra-v2 {
+      width: 85%;
+    }
+    .button-submit {
+      width: 90%;
+    }
+  }
   @media (max-width: 480px) {
     .mobile-container {
       display: block;
@@ -136,10 +156,12 @@
     }
     .high-text {
       display: flex;
+      width: 300px;
     }
     form, .cubik, .cubik-v2{
       display: block;
-      width: 99%;
+        width: 95%;
+        margin-left: 1vw;
     }
     .input-barra {
       width: 88vw;
@@ -157,11 +179,12 @@
       margin-left: 1vw;
     }
     .button-submit {
-      width: 100%;
+      width: 95%;
     }
     button {
       font-size: 24px;
     }
   }
+  
 
 </style>

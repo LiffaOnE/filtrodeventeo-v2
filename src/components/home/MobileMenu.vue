@@ -7,12 +7,19 @@
     </button>
       <!-- Menú móvil -->
       <nav class="mobile-menu" :class="{ open: isMenuOpen }">
+        <img class="white-logo" src="../../assets/iso_blanco.svg" alt="" width="30px">
         <ul>
           <li><router-link to="/#home" @click="closeMenu">HOME</router-link></li>
           <li><router-link to="/#operator" @click="closeMenu">FUNCIONAMIENTO</router-link></li>
           <li><router-link to="/#technical-data" @click="closeMenu">DATOS TÉCNICOS</router-link></li>
           <li><router-link to="/#contacto" @click="closeMenu">CONTACTO</router-link></li>
         </ul>
+        <div class="slash"></div>
+        <div class="languages-l">
+            <img class="languages" src="../../assets/castellano.jpg" alt="">
+            <img class="languages" src="../../assets/ingles.jpg" alt="">
+            <img class="languages" src="../../assets/portugues.jpg" alt="">
+        </div>
       </nav>
     </div>
   </template>
@@ -61,6 +68,31 @@ function closeMenu() {
   border: none; /* Sin bordes */
   outline: none; /* Elimina el contorno al hacer clic */
 }
+.slash {
+  width: 300px;
+  height: 1px;
+  background-color: #FFFFFF;
+  margin-top: 4vw;
+}
+.languages {
+    display: flex;
+    margin: 10px;
+}
+
+.white-logo {
+    width: 150px;
+    display: flex;
+    justify-content: left;
+    height: 80px;
+    align-self: flex-start;
+    background: transparent;
+}
+
+.languages-l {
+    display: flex;
+    align-self: center;
+    margin: 30px;
+}
   
   .hamburger span {
     display: block;
@@ -77,7 +109,7 @@ position: fixed;
   top: -50%; /* Oculto en la parte superior */
   left: 0;
   width: 100%;
-  height: 50%; /* Ocupa la mitad de la pantalla */
+  height: auto;
   background-color: #10395F;; /* Fondo oscuro */
   color: white;
   display: flex;
@@ -96,6 +128,7 @@ position: fixed;
   list-style: none;
   padding: 0;
   margin: 0;
+  text-align: center;
   display: flex;
   flex-direction: column;
   gap: 20px; /* Espacio entre los enlaces */
@@ -103,14 +136,14 @@ position: fixed;
 
 .mobile-menu ul li a {
   text-decoration: none;
-  color: white; /* Texto blanco */
+  color: #C9D2DB; 
   font-size: 18px;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .mobile-menu ul li a:hover {
-  color: #00bcd4; /* Color de hover */
+  color: #FFFFFF; /* Color de hover */
 }
 
   @media (min-width: 700px) {

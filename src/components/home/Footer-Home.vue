@@ -80,4 +80,13 @@
     }
 }
 
+@media (max-width:1920px) {
+    .container {
+        width: 100%;
+    }
+    .logo {
+        margin-left: 2vw;
+    }
+}
+
 </style>

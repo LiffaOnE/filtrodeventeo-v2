@@ -8,7 +8,7 @@
         <div class="box">
           <p class="text-in-line">BRT-42-27-37</p>
         </div>
-        <div class="box-transparent">
+        <div class="box-white">
           <img id="myImg" class="img-ber" src="./../../assets/brt42-27-37_foto.jpg" alt="" >
           <div class="middle"> 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#10395F" width="40px" height="46px"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
@@ -26,7 +26,7 @@
       <div class="box">
         <p class="text-in-line">BRT-SIL.300</p>
       </div>
-      <div class="box-transparent">
+      <div class="box-white">
         <img id="myImg" class="img-ber" src="./../../assets/brt-sil300_foto.jpg" alt="">
         <div class="middle"> 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#10395F" width="40px" height="46px"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
@@ -95,6 +95,10 @@
     display: flex;                
     justify-content: center;      
     align-items: center;          
+}
+
+.box-white:hover {
+  border: 3px #10395F solid;
 }
 
 .img-ber {
@@ -269,7 +273,22 @@
   text-decoration: none;
   cursor: pointer;
 }
-
+@media (max-width:1920px) {
+  .navbar-top {
+    width: 100%;
+  }
+  .model-flex {
+    width: 100%;
+  }
+  .video-view {
+    width: 87%;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    margin-left: 4vw;
+  }
+  
+}
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
   .modal-content {
@@ -280,7 +299,7 @@
   @media (max-width: 480px) {
     .navbar-top {
       width: 100%;
-      margin-top: 44vw;
+      margin-top: 60vw;
     }
     .model-flex {
       display: block;
@@ -294,14 +313,13 @@
     }
 
     .box-transparent, .box-white {
-      width: 365px;
-      height: 365px;
-      margin-top: 2vw;
-      margin-left: 2.5vw;
+      width: 94%;
+      margin:2vw;
     }
     .video-view {
       width: 100%;
       height: auto;
+      margin: 0;
     }
     .modal-content {
     max-width: 70%;
