@@ -63,6 +63,7 @@
     font-weight: light;
     outline: none; /* Elimina el borde de enfoque */
     width: 539px;
+    font-family: 'Roboto Condensed';
 }
 
 .input-barra::placeholder{
@@ -167,6 +168,7 @@
       width: 88vw;
       display: block;
       margin-top: 10vw;
+      font-family: 'Roboto Condensed';
     }
     .input-barra-v2 {
       width: 87vw;

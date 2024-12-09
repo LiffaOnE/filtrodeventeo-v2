@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div style="display: block; margin-left: 5vw;">
+        <div class="top">
             <div class="high-text">
         <img class="img-azul" src="../../assets/iso_azul.svg" alt="">
         <h1 id="technical-data">DATOS TÉCNICOS</h1>
@@ -45,6 +45,11 @@
     margin-top: 4vw;
   }
   
+.top {
+  display: block;
+  margin-left: 5vw;
+}
+
   .high-text {
     justify-content: start;
     text-align: left;
@@ -103,11 +108,22 @@
     padding-left: 1vw;
   }
 
+  @media (max-width:1920px) {
+  .container {
+    width: 100%;
+  }
+  
+}
+
   @media (max-width: 480px) {
   .container {
     width: 100%;
     display: grid;
     margin-top: 6vw;
+  }
+  .top {
+    display: block;
+    margin-left: 0;
   }
   .high-text {
     display: flex;
@@ -116,7 +132,7 @@
   }
   .img-a {
     width: 100%;
-    margin-top: -205vw;;
+    margin-top: -225vw;;
     height: 260px;
   }
   .subtitle-blue {
@@ -129,18 +145,13 @@
     height: 150px;
   }
   .text-p {
-    font-size: 14px;
+    font-size: 16px;
   }
   .part {
     padding: 2.5vw;
   }
 }
-@media (max-width:1920px) {
-  .container {
-    width: 100%;
-  }
-  
-}
+
 
   </style>
   
