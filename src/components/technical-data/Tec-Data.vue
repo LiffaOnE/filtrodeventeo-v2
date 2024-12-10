@@ -132,7 +132,7 @@
   }
   .img-a {
     width: 100%;
-    margin-top: -210vw;;
+    margin-top: -225vw;;
     height: 260px;
   }
   .subtitle-blue {

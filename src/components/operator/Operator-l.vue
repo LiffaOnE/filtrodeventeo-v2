@@ -156,7 +156,7 @@
   }
 
   .text-image-container {
-    margin: 10px 0; /* Ajusta el margen entre bloques de texto */
+    margin: 3vw;
   }
 
   .text-under span {

@@ -106,7 +106,7 @@ function closeMenu() {
   /* Estilos del menú móvil */
   .mobile-menu {
 position: fixed;
-  top: -50%; /* Oculto en la parte superior */
+  top: -100%; /* Oculto en la parte superior */
   left: 0;
   width: 100%;
   height: auto;
