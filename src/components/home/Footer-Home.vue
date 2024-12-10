@@ -69,7 +69,7 @@
     margin-left: 0vw;
   }
     .text {
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
     line-height: 1.4;
     width: 51%; /* Ajusta el texto al ancho del contenedor */

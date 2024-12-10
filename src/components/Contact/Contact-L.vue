@@ -1,8 +1,8 @@
 <template>
-    <div class="mobile-container">
+    <div id="contacto" class="mobile-container">
         <div class="high-text">
         <img class="img-azul" src="../../assets/iso_azul.svg" alt="">
-        <h1 id="contacto">CONTACTO</h1>
+        <h1>CONTACTO</h1>
         </div>
         <form action="https://formsubmit.co/cb00a9d24ad49630a2aace682a6d91d9" method="POST">
           <div class="cubik">
@@ -154,6 +154,7 @@
     .mobile-container {
       display: block;
       width: 100%;
+      margin-top: 10vw;
     }
     .high-text {
       display: flex;

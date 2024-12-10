@@ -1,10 +1,10 @@
 <template>
   <!-- <div class="space"></div> -->
-    <div class="general-background">
+    <div id="operator" class="general-background">
       <div class="text-image-container">
       <div class="high-text">
         <img class="img-azul" src="../../assets/iso_azul.svg" alt="">
-        <h1 id="operator">FUNCIONAMIENTO</h1>
+        <h1>FUNCIONAMIENTO</h1>
       </div>
       <div class="text-center">
           <p>
@@ -114,8 +114,17 @@
     height: 103px;
   }
 
+
+
+@media (max-width:1920px) {
+  .general-background {
+    width: 100%;
+  }
+  
+}
+
   /* Media Query para pantallas de 480px o menos */
-@media (max-width: 480px) {
+  @media (max-width: 480px) {
   .general-background {
     width: 100%; /* Asegura que todo el contenido ocupe el ancho disponible */
     display: flex; 
@@ -131,13 +140,14 @@
 
   .high-text {
     display: flex;
-    font-size: 14px; /* Reduce el tamaño del título */
     text-align: center; /* Centra el título */
     margin-bottom: 10px; /* Espaciado pequeño debajo del título */
+    justify-content: center;
+    margin-top: 5vw;
   }
 
   .text-center, .text-under {
-    font-size: 13px; /* Tamaño de texto más pequeño para pantallas pequeñas */
+    font-size: 16px; /* Tamaño de texto más pequeño para pantallas pequeñas */
     line-height: 1.5; /* Ajusta el interlineado para mantener legibilidad */
     text-align: justify; /* Justifica el texto para mantenerlo visualmente junto */
     margin: 0; /* Elimina márgenes entre los párrafos */
@@ -157,13 +167,6 @@
     width: 100%; /* Ajusta la imagen al ancho de la pantalla */
     height: auto; /* Mantén proporción de la imagen */
   }
-}
-
-@media (max-width:1920px) {
-  .general-background {
-    width: 100%;
-  }
-  
 }
 
   </style>

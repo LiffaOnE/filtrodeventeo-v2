@@ -27,13 +27,13 @@ import MobileMenu from './MobileMenu.vue';
 
 .large-header {
     display: flex;
-    width: 50%;
+    width: 750px;
     height: 100%;
 }
 
 .backgroundNav {
     display: flex;
-    width: 1440px;
+    width: 100%;
     background-color: #10395F;
     height: 130px;
 }
@@ -46,7 +46,7 @@ import MobileMenu from './MobileMenu.vue';
 .languages-l {
     display: block;
     align-self: center;
-    margin: 30px;
+    margin: 6vw;
 }
 
 /* Para móviles pequeños (smartphones en modo vertical) */
@@ -63,6 +63,12 @@ import MobileMenu from './MobileMenu.vue';
     width: 100%;
     height: auto;
   }
+
+  .large-header {
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
 
   /* Mostrar solo el logo y ocultar los demás elementos */
   .image-logo {

@@ -137,9 +137,10 @@ position: fixed;
 .mobile-menu ul li a {
   text-decoration: none;
   color: #C9D2DB; 
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   transition: color 0.3s ease;
+  font-family: 'Roboto Condensed';
 }
 
 .mobile-menu ul li a:hover {

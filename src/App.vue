@@ -7,6 +7,7 @@
   <ContactL/>
   <MapL/>
   <FooterL/>
+  <BackToTop/>
 
 </template>
 
@@ -20,6 +21,8 @@ import PamphletL from './components/pamphlet-L/Pamphlet-L.vue';
 import ContactL from './components/Contact/Contact-L.vue';
 import MapL from './components/map/Map-l.vue';
 import FooterL from './components/footer/Footer-l.vue';
+import BackToTop from './components/BackToTop.vue';
+
 
 </script>
 

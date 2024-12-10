@@ -99,14 +99,6 @@ function setSlideVisibility(emblaInstance) {
 <style scoped>
 
 
-/* .background-card {
-    justify-content: center;
-    text-align: center;
-    width: 466px;
-    height: 466px;
-    background-color: #D9D9D9;
-} */
-
 .background-card-two {
     width: 466px;
     height: 466px;
@@ -138,7 +130,7 @@ function setSlideVisibility(emblaInstance) {
 
 .embla__container {
   display: flex;
-  width: 466px;
+  width: 100%;
   height: 466px;
 }
 
@@ -170,21 +162,21 @@ function setSlideVisibility(emblaInstance) {
 
 .embla__container {
   display: flex;
-  width: 615px;;
+  width: 100%;
   height: 500px;
 }
 .embla__slide.is-visible  {
     width: 720px;
     height: 500px;
 }
-.background-card{
+/* .background-card{
   width: 720px;
   height: 500px;
 }
 .background-card-two {
   width: 720px;
   height: 500px;
-}
+} */
 
 }
 

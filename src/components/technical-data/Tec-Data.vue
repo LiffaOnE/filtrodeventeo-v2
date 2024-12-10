@@ -1,9 +1,9 @@
 <template>
-    <div class="container">
+    <div id="technical-data" class="container">
         <div class="top">
             <div class="high-text">
         <img class="img-azul" src="../../assets/iso_azul.svg" alt="">
-        <h1 id="technical-data">DATOS TÉCNICOS</h1>
+        <h1>DATOS TÉCNICOS</h1>
     </div> 
         <div class="subtitle-blue">
         <p class="part">PARTES</p>
@@ -123,16 +123,16 @@
   }
   .top {
     display: block;
-    margin-left: 0;
+    margin-left: 0vw;
   }
   .high-text {
     display: flex;
     padding: 6vw;
-    margin-left: -8vw;
+    /* margin-left: -8vw; */
   }
   .img-a {
     width: 100%;
-    margin-top: -225vw;;
+    margin-top: -210vw;;
     height: 260px;
   }
   .subtitle-blue {
