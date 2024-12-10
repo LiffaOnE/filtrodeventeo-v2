@@ -52,6 +52,7 @@
   border: 0;
   background-color: transparent;
   }
+  
 
  .input-barra {
     border: none; /* Elimina el borde por defecto */
@@ -81,7 +82,7 @@
     padding: 10px;
     font-size: 20px;
     outline: none; /* Elimina el borde de enfoque */
-    width: 1260px;
+    width: 95%;
     margin-left: 4.3vw;
     color: #999898;
     font-weight: light;
@@ -98,17 +99,24 @@
 
 .cubik-v2 {
   display: block;
-  width: 1440px;
-  /* justify-content: space-around; */
-  margin: 1vw;
+  width: 100%;
+  margin-bottom: 1vw;
   font-size: 24px;
+  margin-left: 1vw;
+}
+
+form {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .cubik {
-  width: 1440px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  margin: 1vw;
+  margin-bottom: 1vw;
   font-size: 24px;
 }
 
@@ -118,8 +126,8 @@
     color: #10395F;
     font-weight: bold;
     margin-top: 2vw;
+    width: 90%;
     margin-left: 5vw;
-    width: 1440px;
   }
 
   .img-azul {
@@ -134,17 +142,39 @@
       width: 100%;
     }
     .cubik {
-      width: 99%;
+      width: 100%;
     }
     .cubik-v2 {
       width: 92%;
-      margin-left: 7vw;
+      margin-left: 6vw;
     }
     .label-c {
       width: 80%;
     }
     .input-barra-v2 {
       width: 85%;
+    }
+    .button-submit {
+      width: 90%;
+    }
+  }
+
+  @media (max-width:1440px) {
+    .mobile-container {
+      width: 100%;
+    }
+    .cubik {
+      width: 100%;
+    }
+    .cubik-v2 {
+      width: 92%;
+      margin-left: 1vw;
+    }
+    .label-c {
+      width: 80%;
+    }
+    .input-barra-v2 {
+      width: 96%;
     }
     .button-submit {
       width: 90%;

@@ -47,11 +47,23 @@
     justify-content: center;
     align-content: center;
     align-self: center;
-    width: 44.5vw;
+    /* width: 44.5vw; */
 }
 
 .text-p {
     font-weight: bold;
+}
+
+@media (max-width:1920px) {
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: -1.5vw;
+    }
+    .logo {
+        margin-left: 2vw;
+    }
 }
 
 /* Media Query para pantallas de 480px o menos */
@@ -72,7 +84,7 @@
     font-size: 18px;
     text-align: center;
     line-height: 1.4;
-    width: 51%; /* Ajusta el texto al ancho del contenedor */
+    width: 58%; /* Ajusta el texto al ancho del contenedor */
   }
 
     .space-white {
@@ -80,13 +92,6 @@
     }
 }
 
-@media (max-width:1920px) {
-    .container {
-        width: 100%;
-    }
-    .logo {
-        margin-left: 2vw;
-    }
-}
+
 
 </style>

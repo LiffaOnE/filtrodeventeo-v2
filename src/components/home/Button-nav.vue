@@ -29,6 +29,7 @@
     border: 0;
     background-color: transparent;
     font-size: 15px;
+    font-family: 'Roboto Condensed';
 }
 
 a {

@@ -132,6 +132,10 @@
     align-items: center; /* Centra los elementos */
   }
 
+  br {
+    display: none;
+  }
+
   .image-background-right {
     width: 100%; /* La imagen ocupará todo el ancho disponible */
     height: auto; /* Ajusta la altura automáticamente */

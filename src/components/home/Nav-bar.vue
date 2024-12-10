@@ -49,6 +49,15 @@ import MobileMenu from './MobileMenu.vue';
     margin: 6vw;
 }
 
+/* Para pantallas grandes de escritorio (monitores UHD) */
+@media (min-width: 1920px) {
+  .backgroundNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 /* Para móviles pequeños (smartphones en modo vertical) */
 @media (max-width: 480px) {
   .backgroundNav {
@@ -87,11 +96,6 @@ import MobileMenu from './MobileMenu.vue';
   }
 }
 
-/* Para pantallas grandes de escritorio (monitores UHD) */
-@media (min-width: 1920px) {
-  .backgroundNav {
-    width: 100%;
-  }
-}
+
 
 </style>
