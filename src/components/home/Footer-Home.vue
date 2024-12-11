@@ -74,6 +74,7 @@
     align-items: center;/* Deja que el contenedor se ajuste automáticamente */
     width: 100%;
     height: 440px;
+    margin-top: 1vw;
     }
     .logo {
     width: 120px;
