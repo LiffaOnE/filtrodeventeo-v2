@@ -3,26 +3,26 @@
         <div class="top">
             <div class="high-text">
         <img class="img-azul" src="../../assets/iso_azul.svg" alt="">
-        <h1>DATOS TÉCNICOS</h1>
+        <h1>{{$t("Tec-Data")}}</h1>
     </div> 
         <div class="subtitle-blue">
-        <p class="part">PARTES</p>
+        <p class="part">{{$t("Parts")}}</p>
     </div>
     <div class="box-container" style="background-color: #E9EBEE; text-align: left;  ">
-        <p class="text-p" style="margin-right: 2vw;">Carcasa metálica con sello o-ring. <br> 
-        Recubierta con pintura en polvo <br>
-        poliéster de alta resistencia.</p>
+        <p class="text-p" style="margin-right: 2vw;">{{$t("P-1")}} <br> 
+          {{$t("P-2")}}<br>
+          {{$t("P-3")}}</p>
     </div>
     <div class="box-container" style="background-color: #BDC4CE; ">
-        <p class="text-p" style="margin-right: 2vw;">Elemento filtrante de 3 micrones.</p>
+        <p class="text-p" style="margin-right: 2vw;">{{$t("E")}}</p>
     </div>
     <div class="box-container" style="background-color: #7D9FBE; text-align: left; " >
-        <p class="text-p">Base portafiltro con sello o-ring.<br>
-            Rosca de conexión NPT ¼. Diámetro<br>
-            piloto para centrado del elemento<br>
-            filtrante. Tratamiento superficial por<br>
-            electrozincado que brinda protección<br>
-            catódica.</p>
+        <p class="text-p">{{$t("Bp-1")}}<br>
+          {{$t("Bp-2")}}<br>
+          {{$t("Bp-3")}}<br>
+          {{$t("Bp-4")}}<br>
+          {{$t("Bp-5")}}<br>
+          {{$t("Bp-6")}}</p>
         </div>
     </div>
       <div>

@@ -3,9 +3,9 @@
         <img class="logo" src="../../assets/iso_blanco.svg" alt="">
         <span class="space-white"></span>
         <span class="text">
-            El <span class="text-p">Filtro de Venteo  BERTOT</span> está concebido para garantizar 
+           {{ $t("The") }}<span class="text-p">{{ $t("Filter") }}</span>{{ $t("Text-Filter") }} 
             <br/>
-            el óptimo funcionamiento de los reductores de velocidad minimizando imprevistos.
+            {{ $t("Text-Filter-under") }}
         </span>
     </div>
 </template>

@@ -2,19 +2,19 @@
     <div id="contacto" class="mobile-container">
         <div class="high-text">
         <img class="img-azul" src="../../assets/iso_azul.svg" alt="">
-        <h1>CONTACTO</h1>
+        <h1>{{ $t("Contact") }}</h1>
         </div>
         <form action="https://formsubmit.co/cb00a9d24ad49630a2aace682a6d91d9" method="POST">
           <div class="cubik">
-            <input type="text" name="name" placeholder="nombre y apellido" class="input-barra">
-            <input type="text" name="empresa" placeholder="empresa" class="input-barra">
+            <input type="text" name="name" :placeholder="$t('Name-a')" class="input-barra">
+            <input type="text" name="empresa" :placeholder="$t('Company')" class="input-barra">
           </div>
           <div class="cubik">
-            <input type="number" name="teléfono" placeholder="teléfono" class="input-barra">
-          <input type="email" name="email" placeholder="email" class="input-barra">
+            <input type="number" name="teléfono" :placeholder="$t('Phone')" class="input-barra">
+          <input type="email" name="email" :placeholder="$t('Email')" class="input-barra">
           </div>
           <div class="cubik-v2">
-            <label for="consulta" class="label-c">consulta</label>
+            <label for="consulta" class="label-c">{{$t("Query")}}</label>
             <input type="text" name="consulta" class="input-barra-v2"> 
           </div>
           
@@ -24,7 +24,7 @@
           <input type="hidden" name="_template" value="table">
 
           <div class="button-submit">
-            <button style="text-decoration: none;" type="submit">enviar ></button>
+            <button style="text-decoration: none;" type="submit">{{$t("Send-b")}}></button>
           </div>
           
         </form>

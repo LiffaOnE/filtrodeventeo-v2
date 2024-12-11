@@ -2,16 +2,16 @@
     <div class="buttons-nav">
         <button class="button-color"></button>
         <button class="button-color">
-            <Router-link to="/#home">HOME</Router-link>
+            <Router-link to="/#home"><p>{{ $t('Home') }}</p></Router-link>
         </button>
         <button class="button-color">
-            <RouterLink to="/#operator">FUNCIONAMIENTO</RouterLink>
+            <RouterLink to="/#operator">{{$t('Operation')}}</RouterLink>
         </button>
         <button class="button-color">
-            <RouterLink to="/#technical-data">DATOS TÉCNICOS</RouterLink>
+            <RouterLink to="/#technical-data">{{$t('Tec-Data')}}</RouterLink>
         </button>
         <button class="button-color">
-            <RouterLink to="/#contacto">CONTACTO</RouterLink>
+            <RouterLink to="/#contacto">{{$t('Contact')}}</RouterLink>
         </button>
         <button class="button-color"></button>
     </div>

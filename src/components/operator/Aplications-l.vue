@@ -1,7 +1,7 @@
 <template>
     <div class="navbar-top">
         <img class="nav-img" src="../../assets/iso_blanco.svg" alt="">
-        <h1 class="nav-text">APLICACIONES</h1>
+        <h1 class="nav-text">{{$t("Aplication")}}</h1>
     </div>
 
     <div class="general-container">
@@ -12,7 +12,7 @@
         <img class="box-one" src="../../assets/ind/aceite.jpg" alt="">
       </div>
       <div class="box-a">
-          <p class="text-box">Aceitera</p>
+          <p class="text-box">{{$t("Oil")}}</p>
       </div>
     </div>
 
@@ -21,7 +21,7 @@
         <img class="box-one" src="../../assets/ind/cemento.jpg" alt="">
       </div>
       <div class="box-a" style="background-color: #898987;">
-          <p class="text-box">Cemento</p>
+          <p class="text-box">{{$t("Cement")}}</p>
       </div>
     </div>
   </div>
@@ -31,7 +31,7 @@
     
 <div class="box-container-two">
   <div class="box-a" style="background-color: #7C91B1;">
-      <p class="text-box">Siderurgia</p>
+      <p class="text-box">{{$t("Iron-s")}}</p>
   </div>
   <div class="box-one">
     <img class="box-one" src="../../assets/ind/siderurgia.jpg" alt="">
@@ -40,7 +40,7 @@
 
 <div class="box-container">
   <div class="box-a" style="background-color: #F6BC0A;">
-      <p class="text-box">Harina</p>
+      <p class="text-box">{{$t("Flour")}}</p>
   </div>
   <div class="box-one">
     <img class="box-one" src="../../assets/ind/harina.jpg" alt="">
@@ -56,7 +56,7 @@
     <img class="box-one" src="../../assets/ind/mineria.jpg" alt="">
   </div>
   <div class="box-a" style="background-color: #BC771E;">
-      <p class="text-box">Minería</p>
+      <p class="text-box">{{$t("Mining")}}</p>
   </div>
 </div>
 
@@ -65,7 +65,7 @@
     <img class="box-one" src="../../assets/ind/madera.jpg" alt="">
   </div>
   <div class="box-a" style="background-color: #5E4709;">
-      <p class="text-box">Madera</p>
+      <p class="text-box">{{$t("Wood")}}</p>
   </div>
 </div>
 </div>
@@ -75,7 +75,7 @@
     
 <div class="box-container-two">
   <div class="box-a" style="background-color: #3399FF;">
-      <p class="text-box">Puertos</p>
+      <p class="text-box">{{$t("Ports")}}</p>
   </div>
   <div class="box-one">
     <img class="box-one" src="../../assets/ind/puertos.jpg" alt="">
@@ -84,7 +84,7 @@
 
 <div class="box-container">
   <div class="box-a" style="background-color: #669933;">
-      <p class="text-box">Materia a granel</p>
+      <p class="text-box">{{$t("B-Material")}}</p>
   </div>
   <div class="box-one">
     <img class="box-one" src="../../assets/ind/granel.jpg" alt="">
