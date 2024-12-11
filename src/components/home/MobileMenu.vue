@@ -16,15 +16,15 @@
         </ul>
         <div class="slash"></div>
         <div class="languages-l">
-            <img class="languages" src="../../assets/castellano.jpg" alt="">
-            <img class="languages" src="../../assets/ingles.jpg" alt="">
-            <img class="languages" src="../../assets/portugues.jpg" alt="">
+            <img class="languages" src="../../assets/castellano.jpg" alt="" @click="changeLocale('es')">
+            <img class="languages" src="../../assets/ingles.jpg" alt="" @click="changeLocale('en')">
+            <img class="languages" src="../../assets/portugues.jpg" alt="" @click="changeLocale('pt')">
         </div>
       </nav>
     </div>
   </template>
   
-  <script setup>
+  <script setup lang="ts">
 import { ref } from 'vue';
 
 const isMenuOpen = ref(false);
@@ -36,12 +36,24 @@ function closeMenu() {
   isMenuOpen.value = false;
 }
 
+import { useI18n } from 'vue-i18n';
+
+// Usar la instancia de i18n
+const { locale } = useI18n();
+
+// Función para cambiar el idioma
+const changeLocale = (lang: string) => {
+  locale.value = lang;  // Cambiar el idioma de la aplicación
+  localStorage.setItem('locale', lang); // Guardar el idioma seleccionado en localStorage
+};
+
 </script>
 
   
   <style scoped>
   
   /* Estilos del botón "hamburguesa" */
+  
 
     .hamburger.open span:nth-child(1) {
     transform: rotate(45deg) translateY(6px);
@@ -58,7 +70,8 @@ function closeMenu() {
     .hamburger {
   position: relative;
   width: 30px;
-  height: 20px;
+  padding: 0;
+  height: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

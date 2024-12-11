@@ -12,17 +12,17 @@
             <div class="embla__container">
                 <div class="embla__slide">
                     <div class="background-card-two">
-                    <span style="text-align: center; align-content: center;"> Prolonga la vida útil<br/>de los lubricantes. </span>
+                    <span style="text-align: center; align-content: center;"> {{$t('C-slide-1')}}<br/>{{ $t('C-slide-1-a') }} </span>
                     </div>
                 </div>
                 <div class="embla__slide">
                     <div class="background-card-two">
-                    <span style="text-align: center; align-content: center;"> Disminuye el desgaste y <br/>costos de mantención. </span>
+                    <span style="text-align: center; align-content: center;"> {{$t('C-slide-2')}}<br/>{{ $t('C-slide-2-a') }}</span>
                     </div>
                 </div>
                 <div class="embla__slide">
                     <div class="background-card-two">
-                    <span style="text-align: center; align-content: center;"> Eliminación de contaminación por agua <br/>en lubricantes y otros fluidos. </span>
+                    <span style="text-align: center; align-content: center;"> {{$t('C-slide-3')}}<br/>{{$t('C-slide-3-a')}}</span>
                     </div>
                 </div>
             </div>
@@ -199,6 +199,7 @@ function setSlideVisibility(emblaInstance) {
     width: 100%;
     height: auto;
     width: auto;
+    margin-left: 0vw;
     }
 
     .embla__container {
@@ -206,6 +207,7 @@ function setSlideVisibility(emblaInstance) {
         margin-top: 4vw;
         height: auto;
         width: auto;
+        margin-left: -3vw;
     }
 
     .embla__slide {

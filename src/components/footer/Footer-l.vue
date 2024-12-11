@@ -2,7 +2,7 @@
   <div class="container">
     <div class="hight-text">
       <div class="text-ber">
-        <p style="line-height: 1;">fabricado por <br>
+        <p style="line-height: 1;">{{$t("Fab")}}<br>
           <img src="./../../assets/bertotlogo.svg" alt="" width="150px">
         </p>
         </div>

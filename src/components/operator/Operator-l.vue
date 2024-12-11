@@ -4,32 +4,32 @@
       <div class="text-image-container">
       <div class="high-text">
         <img class="img-azul" src="../../assets/iso_azul.svg" alt="">
-        <h1>FUNCIONAMIENTO</h1>
+        <h1>{{$t("Operation")}}</h1>
       </div>
       <div class="text-center">
           <p>
-            Los componentes del reductor de velocidad, incluídos aire y aceite,<br>
-            adquieren temperatura durante su funcionamiento. <br>
-            El aire aumenta su volumen y si no hay una buena salida al exterior,<br>
-            se elevará su presión. Generando en ocasiones fugas en retenes,<br>
-            sin detectarse fallas en los mismos. <br>
-            Es común encontrar venteos tradicionales tapados.
+            {{ $t("Operation-1") }}<br>
+            {{ $t("Operation-2") }}<br>
+            {{ $t("Operation-3") }}<br>
+            {{ $t("Operation-4") }}<br>
+            {{ $t("Operation-5") }}<br>
+            {{ $t("Operation-6") }}
           </p>
           <p>
-            Cuando el reductor se detiene, ocurre el proceso inverso. <br>
-            El enfriamiento del aire en el interior del mismo provoca <br>
-            el ingreso de aire desde el exterior transportando partículas <br>
-            del ambiente.
+            {{ $t("Reductor-1") }}<br>
+            {{ $t("Reductor-2") }}<br>
+            {{ $t("Reductor-3") }}<br>
+            {{ $t("Reductor-4") }}
           </p>
       </div>
       <div class="text-under">
           <p>
-            El <span>Filtro de Venteo BERTOT </span> está concebido para garantizar <br>
-            un óptimo funcionamiento de los reductores de velocidad <br>
-            minimizando imprevistos. <br>
-            Los resultados quedan avalados por la disminución <br>
-            de partículas extrañas que se observan <br>
-            en los análisis de aceite.
+            {{$t("The")}}<span>{{$t("Filter")}} </span> {{$t("Under-1")}} <br>
+            {{$t("Under-2")}}<br>
+            {{$t("Under-3")}}<br>
+            {{$t("Under-4")}}<br>
+            {{$t("Under-5")}}<br>
+            {{$t("Under-6")}}
           </p>
       </div>
     </div>

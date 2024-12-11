@@ -3,10 +3,10 @@
         <img class="image-logo" src="../../assets/logofiltro+bertot.svg" alt="">
         <img class="large-header" src="../../assets/fdo_header.jpg" alt="">
         <div class="languages-l">
-            <img class="languages" src="../../assets/castellano.jpg" alt="">
-            <img class="languages" src="../../assets/ingles.jpg" alt="">
-            <img class="languages" src="../../assets/portugues.jpg" alt="">
-        </div>
+          <img class="languages" src="../../assets/castellano.jpg" alt="Español" @click="changeLocale('es')">
+          <img class="languages" src="../../assets/ingles.jpg" alt="English" @click="changeLocale('en')">
+          <img class="languages" src="../../assets/portugues.jpg" alt="Português" @click="changeLocale('pt')">
+    </div>
         <MobileMenu/>
     </div>
 </template>
@@ -14,6 +14,17 @@
 <script lang="ts" setup>
 
 import MobileMenu from './MobileMenu.vue';
+
+import { useI18n } from 'vue-i18n';
+
+// Usar la instancia de i18n
+const { locale } = useI18n();
+
+// Función para cambiar el idioma
+const changeLocale = (lang: string) => {
+  locale.value = lang;  // Cambiar el idioma de la aplicación
+  localStorage.setItem('locale', lang); // Guardar el idioma seleccionado en localStorage
+};
 
 </script>
 
@@ -41,6 +52,7 @@ import MobileMenu from './MobileMenu.vue';
 .languages {
     display: flex;
     margin: 10px;
+    cursor: pointer;
 }
 
 .languages-l {
