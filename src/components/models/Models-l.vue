@@ -1,7 +1,7 @@
 <template>
     <div class="navbar-top">
         <img class="nav-img" src="../../assets/iso_blanco.svg" alt="">
-        <h1 class="nav-text">MODELOS</h1>
+        <h1 class="nav-text">{{$t("Models")}}</h1>
     </div>
     <div class="model-block">
         <div class="model-flex">

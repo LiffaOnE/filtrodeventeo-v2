@@ -151,12 +151,13 @@
   }
 
   .text-center, .text-under {
-    font-size: 16px; /* Tamaño de texto más pequeño para pantallas pequeñas */
     line-height: 1.5; /* Ajusta el interlineado para mantener legibilidad */
     text-align: justify; /* Justifica el texto para mantenerlo visualmente junto */
     margin: 0; /* Elimina márgenes entre los párrafos */
     padding: 0; /* Elimina cualquier padding innecesario */
     width: 100%; /* Asegura que el texto no llegue al borde de la pantalla */
+    font-size: 18px;
+    font-weight: 400;
   }
 
   .text-image-container {

@@ -145,7 +145,8 @@
     height: 150px;
   }
   .text-p {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 400;
   }
   .part {
     padding: 2.5vw;

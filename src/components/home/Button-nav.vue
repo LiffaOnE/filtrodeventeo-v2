@@ -2,16 +2,16 @@
     <div class="buttons-nav">
         <button class="button-color"></button>
         <button class="button-color">
-            <Router-link to="/#home"><p>{{ $t('Home') }}</p></Router-link>
+            <Router-link class="pointer" to="/#home"><p>{{ $t('Home') }}</p></Router-link>
         </button>
         <button class="button-color">
-            <RouterLink to="/#operator">{{$t('Operation')}}</RouterLink>
+            <RouterLink class="pointer" to="/#operator">{{$t('Operation')}}</RouterLink>
         </button>
         <button class="button-color">
-            <RouterLink to="/#technical-data">{{$t('Tec-Data')}}</RouterLink>
+            <RouterLink class="pointer" to="/#technical-data">{{$t('Tec-Data')}}</RouterLink>
         </button>
         <button class="button-color">
-            <RouterLink to="/#contacto">{{$t('Contact')}}</RouterLink>
+            <RouterLink class="pointer" to="/#contacto">{{$t('Contact')}}</RouterLink>
         </button>
         <button class="button-color"></button>
     </div>
@@ -34,6 +34,10 @@
 
 a {
     all: unset;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 .button-color:hover {

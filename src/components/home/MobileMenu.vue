@@ -105,6 +105,7 @@ const changeLocale = (lang: string) => {
     display: flex;
     align-self: center;
     margin: 30px;
+    cursor: pointer;
 }
   
   .hamburger span {

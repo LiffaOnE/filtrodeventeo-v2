@@ -86,6 +86,7 @@
     text-align: center;
     line-height: 1.4;
     width: 58%; /* Ajusta el texto al ancho del contenedor */
+    font-weight: 400;
   }
 
     .space-white {
