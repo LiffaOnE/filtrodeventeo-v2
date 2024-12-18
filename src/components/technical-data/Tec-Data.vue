@@ -99,7 +99,7 @@
 
   .text-p {
     font-size: 20px;
-    font-weight: 250;
+    font-weight: 400;
     color: #10395F;
   }
 
