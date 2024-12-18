@@ -169,7 +169,7 @@
   }
 
   .img-a {
-    width: 100%; /* Ajusta la imagen al ancho de la pantalla */
+    width: 70%; /* Ajusta la imagen al ancho de la pantalla */
     height: auto; /* Mantén proporción de la imagen */
   }
 }
