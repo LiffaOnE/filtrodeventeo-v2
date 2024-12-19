@@ -108,8 +108,8 @@
 }
 
   .nav-img {
-    width: 65px;
-    height: 65px;
+    width: 80px;
+    height: 80px;
     align-self: center;
     padding-left: 5vw;
   }

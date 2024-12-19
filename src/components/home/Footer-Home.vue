@@ -77,12 +77,13 @@
     margin-top: 1vw;
     }
     .logo {
-    width: 120px;
+    /* width: 120px;
     margin-bottom: -50vw;
-    margin-left: 0vw;
+    margin-left: 0vw; */
+    display: none;
   }
     .text {
-    font-size: 18px;
+    font-size: 24px;
     text-align: center;
     line-height: 1.4;
     width: 58%; /* Ajusta el texto al ancho del contenedor */
