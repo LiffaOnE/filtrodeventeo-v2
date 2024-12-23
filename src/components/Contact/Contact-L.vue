@@ -4,7 +4,7 @@
         <img class="img-azul" src="../../assets/iso_azul.svg" alt="">
         <h1>{{ $t("Contact") }}</h1>
         </div>
-        <form action="https://formsubmit.co/bertot@bertot.com.ar" method="POST">
+        <form action="https://formsubmit.co/0df506f22faf9d4ff927e4b427892ede" method="POST">
           <div class="cubik">
             <input type="text" name="name" :placeholder="$t('Name-a')" class="input-barra">
             <input type="text" name="empresa" :placeholder="$t('Company')" class="input-barra">
