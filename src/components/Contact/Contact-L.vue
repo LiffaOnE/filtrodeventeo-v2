@@ -19,7 +19,7 @@
           </div>
           
 
-          <input type="hidden" name="_next" value="http://localhost:8080/">
+          <input type="hidden" name="_next" value="http://filtrodeventeo.com.ar/">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_template" value="table">
 
